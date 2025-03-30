@@ -1,0 +1,89 @@
+.organize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 10px;
+    @media (min-width: 700px) {
+      padding: 106px 0;
+      margin: auto;
+    }
+    .organize__column {    
+        padding: 43px 0;
+        gap: 59px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 700px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        } 
+        .organize__column-left {
+            display: flex;
+            flex-direction: column;
+            text-align: center; 
+            @media (min-width: 700px) {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }     
+            .organize__text-group {
+                text-align: center;
+                flex-direction: column;
+                gap: 7px;
+                @media (min-width: 700px) {
+                    text-align: left;
+                    padding: 43px 0;
+                    gap: 10px;
+                }
+                .organize__title {
+                    padding: 10px;
+                    h3 {
+                        font-size: 48px;
+                        font-weight: 400;
+                        line-height: 55px;
+                        letter-spacing: 0.2px;
+                    }
+                }
+                .organize__description {
+                    padding: 10px;
+                    p {
+                        font-size: 28px; 
+                        line-height: 40px;
+                        letter-spacing: 0.2px;
+                        font-weight: 400;
+                    }
+                }
+            }         
+            .organize__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+
+                @media (min-width: 700px) {
+                    padding: 0px;
+                    justify-content: flex-start;
+                }         
+                .main__button-active {
+                background-color: var(--primary-button-color);
+                border-radius: 35px;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                padding: 13px 48px;
+                }        
+            }           
+        } 
+        .organize__column-right {
+            padding: 7px;
+            flex: 1;
+        }
+    }
+}

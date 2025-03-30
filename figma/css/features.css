@@ -1,0 +1,78 @@
+.features {
+    padding: 200px;
+    padding: 80px 0;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        .features__intro {
+            gap: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .features__header {
+                display: flex;
+                h2 {
+                    font-weight: 400;
+                    font-size: 3rem;
+                    line-height: 55px;
+                    letter-spacing: 0.2px;
+                    padding: 10px;
+                    gap: 10px;
+                    phont
+                }
+            }
+            .features__description {
+                text-align: center;              
+                p {
+                padding: 10px;
+                gap: 10px;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 40px;
+                text-align: center;
+                }
+            }
+            .features__video-mobile {
+                @media (min-width: 700px) {
+                  display: none;
+                }
+              }        
+        }
+            .features__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 0;
+            gap: 75px;
+            margin: auto;
+            @media (min-width: 700px) {
+                flex-direction: row;
+                justify-content: center;
+                max-width: 869px;
+                gap: 59px;
+            }
+            .features__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+            }
+            .features__video {
+            display: none;
+            img {
+                width: 100%;
+            }
+            @media (min-width: 700px) {
+                display: block;
+            }
+            } 
+}
+
+    
